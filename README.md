@@ -57,7 +57,7 @@ A Twitter-like social media web application clone built with React for the front
 #### Frontend Setup
 
 ```bash
-cd twiller
+cd client
 npm init -y
 npm install
 npm install @emailjs/browser @emotion/react @emotion/styled @mui/icons-material @mui/material @testing-library/jest-dom @testing-library/react @testing-library/user-event axios caniuse-lite firebase moment react react-copy-to-clipboard react-dom react-google-button react-redux react-router-dom react-scripts react-twitter-embed web-vitals
