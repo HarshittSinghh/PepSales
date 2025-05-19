@@ -1,0 +1,116 @@
+.explore-page {
+  flex: 2;
+  width: 90vh;
+  height: 90vh; 
+  overflow-y: scroll;
+  padding: 3rem;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+.explore-page::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-title {
+  text-align: center;
+  color:#50b7f5;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore-input {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.explore-input:focus {
+  border-color: #7cb8c0;
+  box-shadow: 0 0 5px rgba(124, 184, 192, 0.4);
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.explore-card {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.explore-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(124, 184, 192, 0.3);
+}
+
+.explore-avatar {
+  background-color: #7cb8c0;
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.explore-name {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.explore-no-result {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+@media screen and (max-width: 1024px) {
+  .explore-page {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .explore-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .explore-page {
+    padding: 1.5rem 1rem;
+    padding-bottom: 60px;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .explore-title {
+    font-size: 1.5rem;
+  }
+}

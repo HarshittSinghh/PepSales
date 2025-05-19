@@ -1,0 +1,47 @@
+.sidebarOptions {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 30px;
+}
+
+.sidebarOptions:hover {
+  background-color: #e8f5fe;
+  color: var(--twitter-color);
+}
+
+.sidebarOptions > .MuiSvgIcon-root {
+  padding: 8px;
+  font-size: 24px;
+}
+
+.sidebarOptions > h2 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.done__icon {
+  color: var(--twitter-color) !important;
+}
+
+@media screen and (max-width: 688px) {
+  .sidebar__tweet {
+    display: none;
+  }
+
+  .sidebarOptions > h2 {
+    display: none;
+  }
+
+  .sidebarOptions {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .sidebarOptions > .MuiSvgIcon-root {
+    margin: 0;
+  }
+}
